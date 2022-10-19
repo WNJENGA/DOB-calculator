@@ -1,0 +1,134 @@
+     
+body{filter: blur();
+    background-image: url(Sunsets_on_the_SGR.png);
+    background-size:cover !important; background-color: black;
+    justify-content: center;align-items: center; 
+    background-repeat: no-repeat;
+}
+.container{
+    position: absolute;overflow: hidden;
+    width: 820px; height: auto;
+    top: calc(50vh - 200px);left: calc(50vw - 450px);
+    
+}
+#wrapper{
+    display: flex !important;
+    width: 2460px;   
+}
+.item{ 
+    background-color: rgba(44,179,74, 0.05);           
+    width: 800px;height: 400px;        
+    border: 3px solid #2cb34a;
+    display: flex;flex-direction: column;
+    position: relative; margin: 10px;
+    backdrop-filter: blur(20px);
+    justify-content: center;align-items: center;  
+    backdrop-filter: blur(20px);        
+}        
+form div{
+    background-color: none;
+    display: flex;width: auto;
+    justify-content: center;
+}
+input, select{
+    width: inherit;height: 40px;margin: 5px;
+    background: none;outline: none;
+    border: 1px solid white; color: white;
+    text-align: center; max-width: 240px;
+    font-size: 30px;font-family: 'Caveat', cursive;
+    font-weight: bold;
+}
+select{
+    cursor: pointer;width: 200px;
+    
+}
+.navigation{background-color: none;
+    width: 100%;display: flex;flex-wrap: nowrap;
+    position: absolute; bottom: 20px;
+    justify-content: space-between;
+    margin: 30px 0px 0px 0px;
+}
+button{
+    background: none; color: white;
+    font-size: 18px;outline:none;
+    border: 1px solid #2cb34a;cursor:pointer;
+    font-family: 'Abel', sans-serif;
+}
+.back{position: relative;float: left;margin-left: 20px;}
+.next{background:none;position:relative;float: right !important;margin-right:20px;}
+section{
+    display: flex;flex-direction: column;align-items: center;      }
+p{
+    font-family: 'Caveat', cursive;
+    font-weight: bold; 
+    color: white; font-size: 28px; 
+    justify-content: center;text-align: center;        
+}
+#start{
+    opacity:1 ;
+    animation-name: animate_button 2s 2.5s normal forwards;
+    right: 5px;position: absolute;bottom: 0px;
+}
+@keyframes animate_button{
+    to{opacity:1;}
+}
+#submit{opacity:1;}
+#quote{
+    animation: animate_quote 2s 1.5s normal forwards;
+   display: block;font-family: 'Caveat', cursive; font-size: 30px;
+   font-weight: bolder;
+}
+@keyframes animate_quote {
+ to{opacity: 0;display:none;}          
+}
+#objective{
+    opacity: 0;
+    animation: animate_objective 2s 2s normal forwards;
+    font-family: 'Caveat', cursive; font-size: 30px; font-weight: bolder;
+}
+@keyframes animate_objective {
+    50%{display:block;}
+    100%{ opacity:1;}
+}
+#quote::after{
+    content: "'Amit Kalantri'";
+    position: absolute;
+    bottom: 150px;
+    right: 100px;  font-size: 13px;
+    animation-name: animate_quote ;  
+    font-family: 'Abel', sans-serif;      
+}
+::placeholder{
+    color: rgba(236, 2, 2, 0.8);
+    font-size: 22px;
+}
+option:hover{
+  color: rgb(246, 250, 0);
+  background-color:#2cb34a;
+}
+.error{
+    color:red;font-size: 16px;line-height: 10px;
+    opacity: 0;transition: all .5s;
+    font-family: 'Abel', sans-serif;
+}
+select option {
+    margin: 40px;
+    background:#2cb34a;
+    color: #fff; 
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); } 
+.result{
+    color:#2cb34a;font-weight:bold;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+a{
+    color:#2cb34a;
+    text-decoration: none;
+}
+
+@media screen (max width = 700px) {
+        
+}
