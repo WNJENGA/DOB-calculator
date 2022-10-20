@@ -1,23 +1,23 @@
 hello there!
-this app is meant for recreational purposes only and is not intended for administrative use
-The dates provided in the app are linked to Akan names from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
+The project name is Akan Name Generator V1.1 authored by Gitau Njenga
 
-Male
-Sunday: Kwasi
-Monday: Kwadwo
-Tuesday: Kwabena
-Wednesday: Kwaku
-Thursday:  Yaw
-Friday: Kofi
-Saturday: Kwame
+Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names. This app takes a user's birthday on the form provided and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.
 
-Female
-Sunday: Akosua
-Monday: Adwoa
-Tuesday: Abenaa
-Wednesday: Akua
-Thursday:  Yaa
-Friday: Afua
-Saturday: Ama
-The method used is based on the 
-in some cases (past 1752BC), when British territories (such as what is now the USA) switched from Julian to Gregorian calendar, losing 11 days — 3-13 September — in the process). Other areas of the world changed as early as 1584 (working from memory) and others not until the 20th Century (which is why the October Revolution in Russia occurred in November in most of the rest of the world), and quite a lot of different dates in between. You can even find that Sweden had a 30th of February 1712 because of the switchover (and mistakes made during the switchover).
+Setup/Installation Requirements
+Text editer I used Visual Studio
+Github account
+Git installed in pc
+Terminal or command line
+Technologies Used
+HTML
+CSS
+Javascript
+Support and contact details
+You can provide feedback or raise any issues/ bugs through the following means:
+
+gitau.njenga@student.moringaschool.com
+Slack me (Moringa-School) @ Gitau Njenga
+License
+License used is MIT License
+
+Copyright (c) 2022 Gitau Njenga
