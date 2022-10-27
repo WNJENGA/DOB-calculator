@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akan Name Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="wrapper">
+        <div class="item">
+          <p id="quote">
+            "A birth-date is a reminder to celebrate the life as well as to
+            update the life."
+          </p>
+          <p id="objective">
+            Hello there! <br />This is a web application that takes your
+            birthday details and calculates the day of the week you were born
+            and then depending on your gender, outputs your Akan Name.
+            <a
+              class="research"
+              href="https://en.wikipedia.org/wiki/Akan_names"
+              target="_blank"
+              >Akan names</a
+            >
+            are derived from Ghanian culture. Frequently in Ghana, children are
+            given their first name as a 'day name' which corresponds to the day
+            in the week they were born.
+          </p>
+          <div class="navigation">
+            <button
+              class="next"
+              id="start"
+              onclick="sideScroll('right');"
+              type="button"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+        <form class="item" id="form">
+          <div>
+            <section>
+              <input
+                required
+                id="gender"
+                value=""
+                type="text"
+                placeholder="'male'"
+                id=""
+              />
+              <span class="error"></span>
+            </section>
+          </div>
+          <div>
+            <section>
+              <input required id="date" type="number" placeholder="date" />
+              <span class="error"></span>
+            </section>
+            <section>
+              <input required id="month" type="number" placeholder="month" />
+              <span class="error"></span>
+            </section>
+            <section>
+              <input
+                required
+                id="year"
+                type="number"
+                placeholder="year(YYYY)"
+              />
+              <span class="error"></span>
+            </section>
+          </div>
+          <div class="navigation">
+            <button class="back" onclick="sideScroll('left')" type="button">
+              Prev
+            </button>
+            <button class="next" onclick="start()" id="submit" type="button">
+              Next
+            </button>
+          </div>
+        </form>
+        <div class="item">
+          <p class="results">
+            Hello there <span class="result"></span
+            ><span class="result"></span>!<br />
+            your name is derived from Akan names in Ghanian culture <br />
+            as a result of a <span class="result"></span> being born on :
+            <span class="result"></span> , <span class="result"></span>
+            <sup id="sup"></sup> <span class="result"></span>
+            <span class="result"></span><span class="result"></span>
+          </p>
+          <div class="navigation">
+            <button class="back" onclick="sideScroll('left')" type="button">
+              Prev
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
